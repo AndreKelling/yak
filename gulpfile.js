@@ -1,7 +1,14 @@
 const gulp 	= require('gulp'),
     sass 	= require('gulp-sass'),
     concat 	= require('gulp-concat'),
-    uglify 	= require('gulp-uglify');
+    uglify 	= require('gulp-uglify'),
+    util    = require('gulp-util'),
+    sourcemaps = require('gulp-sourcemaps');
+
+const config = {
+    production: !!util.env.production
+};
+
 
 const paths = {
     styles: {
@@ -16,20 +23,23 @@ const paths = {
 
 function styles() {
     return gulp
-        .src(paths.styles.src, {
-            sourcemaps: true
-        })
+        .src(paths.styles.src)
+        .pipe(!config.production ? sourcemaps.init({loadMaps: true}) : util.noop())
         .pipe(sass().on('error', sass.logError))
+        .pipe(!config.production ? sourcemaps.write('.') : util.noop())
         .pipe(gulp.dest(paths.styles.dest));
 }
 
 function scripts() {
+    console.log(config.production);
     return gulp
         .src(paths.scripts.src, {
             sourcemaps: true
         })
-        .pipe(uglify())
+        .pipe(config.production ? uglify() : util.noop())
+        .pipe(!config.production ? sourcemaps.init({loadMaps: true}) : util.noop())
         .pipe(concat('main.min.js'))
+        .pipe(!config.production ? sourcemaps.write('.') : util.noop())
         .pipe(gulp.dest(paths.scripts.dest));
 }
 

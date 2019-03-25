@@ -7,7 +7,7 @@
     },
     "scripts": {
         "dev": "gulp",
-        "build": "gulp build"
+        "build": "gulp build --production"
     },
     "browserslist": [
         "last 2 versions"
@@ -16,6 +16,8 @@
         "gulp": "^4.0.0",
         "gulp-concat": "^2.6.1",
         "gulp-sass": "^4.0.2",
-        "gulp-uglify": "^3.0.2"
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "gulp-util": "^3.0.8"
     }
 }
