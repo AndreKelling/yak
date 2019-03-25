@@ -9,7 +9,7 @@ const paths = {
         dest: 'public/css/'
     },
     scripts: {
-        src: 'assets/scripts/*.js',
+        src: ['assets/scripts/jquery/*js', 'assets/scripts/*.js'],
         dest: 'public/js/'
     }
 };

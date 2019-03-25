@@ -53,9 +53,9 @@ Redaxo ${REDAXO_VERSION}${CNO} was sussessful loaded and unzipped into the publi
 echo -e "${CRED}
 Create Yakamara file structure
 - - - - - - - - - - - -${CNO}"
-mkdir bin
-mkdir src
-mkdir var
+rm -r bin; mkdir bin
+rm -r src; mkdir src
+rm -r var; mkdir var
 
 mv public/redaxo/bin/* bin
 mv public/redaxo/cache var
@@ -81,11 +81,9 @@ Load REDAXO AddOns
 ${CNO}"
 
 # structure_tweaks
-read -p "Load FriendsOfREDAXO addons [adminer bloecks developer focuspoint mblock multiupload quick_navigation redactor2]:" repos
+echo "Load FriendsOfREDAXO addons [adminer bloecks demo_base developer focuspoint markitup mblock multiupload quick_navigation redactor2]:"
 
-if [ -z "$repos" ]; then
-    repos=("adminer" "bloecks" "developer" "focuspoint" "mblock" "multiupload" "quick_navigation" "redactor2")
-fi
+repos=("adminer" "bloecks" "demo_base" "developer" "focuspoint" "markitup" "mblock" "multiupload" "quick_navigation" "redactor2")
 
 for repo in ${repos[@]}
 do
@@ -100,34 +98,26 @@ do
 
 done
 
-
-
-#read -p "Load Yakamara addons [redaxo_yform redaxo_yrewrite ydeploy]:" repos
+# echo "Load Yakamara addons [redaxo_yform redaxo_yrewrite ydeploy]:"
 #
-#if [ -z "$repos" ]; then
-#    repos=("redaxo_yform" "redaxo_yrewrite" "ydeploy")
-#fi
+# repos=("redaxo_yform" "redaxo_yrewrite" "ydeploy")
 #
-#for repo in ${repos[@]}
-#do
-#    set -e
-#    curl -Ls -o ./tmp/${repo}_repo.json https://api.github.com/repos/yakamara/${repo}/releases/latest
-#    zipball_url=`php -r "echo json_decode(file_get_contents('./tmp/${repo}_repo.json'))->zipball_url;"`
-#    curl -Ls -o ./tmp/${repo}.zip ${zipball_url}
-#    unzip -oq ./tmp/${repo}.zip -d ./tmp
-#    mv ./tmp/*${repo}*/ ./src/addons/${repo}/;
+# for repo in ${repos[@]}
+# do
+#     set -e
+#     curl -Ls -o ./tmp/${repo}_repo.json https://api.github.com/repos/yakamara/${repo}/releases/latest
+#     zipball_url=`php -r "echo json_decode(file_get_contents('./tmp/${repo}_repo.json'))->zipball_url;"`
+#     curl -Ls -o ./tmp/${repo}.zip ${zipball_url}
+#     unzip -oq ./tmp/${repo}.zip -d ./tmp
+#     mv ./tmp/*${repo}*/ ./src/addons/${repo}/;
 #
-#    echo -e "${CGREEN}${repo}${CNO} was successful loaded and unzipped into the addon folder"
+#     echo -e "${CGREEN}${repo}${CNO} was successful loaded and unzipped into the addon folder"
 #
-#done
+# done
 
+echo "Load tbaddade addons [redaxo_sprog redaxo_url redaxo_watson]:"
 
-
-read -p "Load tbaddade addons [redaxo_sprog redaxo_url redaxo_watson]:" repos
-
-if [ -z "$repos" ]; then
-    repos=("redaxo_sprog" "redaxo_url" "redaxo_watson")
-fi
+repos=("redaxo_sprog" "redaxo_url" "redaxo_watson")
 
 for repo in ${repos[@]}
 do
@@ -158,8 +148,8 @@ done
 # remove
 rm -rf public/redaxo/bin
 rm -rf public/redaxo/src
-rm -rf setup
+# rm -rf setup
 rm -rf tmp
 
-# execute yarn
-yarn
+# execute npm install
+npm i

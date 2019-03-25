@@ -3,9 +3,12 @@
 Forked the yak redaxo setup for a SCSS workflow based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn.
 Find in depth setup and deploy information on [yak base repo](https://github.com/yakamara/yak) readme.
 
-## Install
+## Requirements
 
-1. prepare your local setup
+* have your prepare your local apache server setup
+* have node and npm installed
+
+## Install
 
 1. put your URL into `/.env` file
    
@@ -15,21 +18,18 @@ Find in depth setup and deploy information on [yak base repo](https://github.com
 
 1. go through default redaxo setup in your browser
 
-1. update core in Back End
+1. [activate demo content](https://github.com/FriendsOfREDAXO/demo_base#installation)
 
-1. install [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn, can get uninstalled afterwards
-
-1. run `npm install`
+1. [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn, can get uninstalled afterwards
 
 ### Further requirements
 
-* node and npm installed
 * developer AddOn installed (should already in with setup)
 * ydeploy AddOn installed (should already in with setup)
 
 ## Development
 
-Now to really use your SCSS and JS gulp workflow. You need to change the binded resources.
+Now to really use your SCSS and JS gulp workflow. You need to change the binded resources. This is with developer plugin activated and synced template.
 
 1. in `src/templates/00 . Header [4]/template.php` replace `redaxo-demo.css` with `style.css`. You can remove the original redaxo-demo.css.
 
