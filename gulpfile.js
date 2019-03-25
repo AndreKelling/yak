@@ -13,11 +13,11 @@ const config = {
 const paths = {
     styles: {
         src: 'assets/styles/*.scss',
-        dest: 'public/css/'
+        dest: 'public/resources/css/'
     },
     scripts: {
         src: ['assets/scripts/jquery/*js', 'assets/scripts/*.js'],
-        dest: 'public/js/'
+        dest: 'public/resources/js/'
     }
 };
 
@@ -31,7 +31,6 @@ function styles() {
 }
 
 function scripts() {
-    console.log(config.production);
     return gulp
         .src(paths.scripts.src, {
             sourcemaps: true
