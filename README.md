@@ -3,6 +3,12 @@
 Forked the yak redaxo setup for a SCSS workflow. Based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn.
 Find in depth setup and deploy tool information on [yak base repo](https://github.com/yakamara/yak) readme.
 
+## Motivation
+
+This kind of a boilerplate shall give you a good starting point for a faster website creation with Redaxo CMS. As the original yak codebase does provide SCSS and JS with gulp, but no adquate template where functionalities and styles are mapped to. Which leads to starting at Zero. On the other side the demo base provides a good starting point template-wise. But no asset-automation like gulp.
+
+So here the combined strength of them both.
+
 ## Requirements
 
 * have your prepare your local apache server setup
@@ -41,3 +47,8 @@ Now to really use your SCSS and JS gulp workflow. You need to change the binded 
 For production settings, without sourcemaps, you will need to build CSS and JS once.
 
 1. `npm run build`
+
+## Issues
+
+* SCSS and JS are still unclean written
+* I did not keep attention on the deployemnt tool of the original yak

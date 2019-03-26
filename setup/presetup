@@ -154,4 +154,4 @@ rm -rf tmp
 # execute npm install
 npm i
 
-echo "You can remove the setup directory now."
+echo "You can remove the ${CGREEN}setup directory${CNO} now."
