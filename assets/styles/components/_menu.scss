@@ -3,16 +3,16 @@
 .menu-link { display: none;}
 .fixed { top: 0;   position: fixed;   margin: 0;   padding: 0;  left: 0;  right: 0;   }
 
-.menu {   font-size: 13px;   float: left;  z-index: 1030;  font-family: 'Lato', sans-serif;  padding: 25px 0;  position: absolute;  right: 0px;  -webkit-transition: all 0.5s linear;
+.menu {   font-size: 13px;   float: left;  z-index: 1030;  padding: 25px 0;  position: absolute;  right: 0px;  -webkit-transition: all 0.5s linear;
 -moz-transition: all 0.5s linear; -o-transition: all 0.5s linear; -ms-transition: all 0.5s linear; transition: all 0.5s linear; }
 
 .menu ul {   padding: 0px;  margin: 0px;  list-style: none;  position: relative;  display: inline-table; }
 .menu > li > ul.sub-menu { 	min-width: 10em;	padding: 4px 0;	background-color: #277EC5;	border-top: 1px solid #123C6E;}
-.menu a {  color: #fff;     -webkit-transition: all 0.5s linear;   -moz-transition: all 0.5s linear;   -o-transition: all 0.5s linear;   -ms-transition: all 0.5s linear; 
+.menu a {  color: $color__white;     -webkit-transition: all 0.5s linear;   -moz-transition: all 0.5s linear;   -o-transition: all 0.5s linear;   -ms-transition: all 0.5s linear;
   transition: all 0.5s linear; }
 .menu ul li { padding: 0px; line-height: 1em; }
 .menu > ul > li { display: inline-block; }
-.menu ul li a { display: block; text-decoration: none; color: #fff; }
+.menu ul li a { display: block; text-decoration: none; color: $color__white; }
 .menu ul ul li a {text-transform: none;}
 .menu ul li > a {line-height: 20px; padding: 15px 10px; font-weight: 600; text-transform: uppercase; font-size: 13px; display: block}
 .menu ul ul {   padding-top: 25px;  z-index: 1000;  display: none;   position: absolute;   top:100%;  min-width: 160px;  background-color: #277EC5;}
@@ -22,7 +22,7 @@
 .menu ul ul > li a { padding: 5px 15px 5px 10px; height: auto; background-color: #277EC5;}
 .menu ul ul > li a:hover, .menu ul > li a:hover { background-color: #75AFDE; color: #123c6e;}
 .menu a .active {color: #123c6e;}
-.menu ul ul ul { position: absolute; left: 100%; top:0; border-left: 1px solid #ffffff; padding-top: 0px;}
+.menu ul ul ul { position: absolute; left: 100%; top:0; border-left: 1px solid $color__white; padding-top: 0px;}
 
 .stuck .menu { 	padding: 0; }
 .stuck img { height: 50px; }
@@ -33,7 +33,7 @@
 
   .header-menu .container { width: 100%; }
   a.menu-link { display: block; 
-  color: #fff; 
+  color: $color__white;
   background-color: #123C6E; 
   float: right; 
   text-decoration: none; 

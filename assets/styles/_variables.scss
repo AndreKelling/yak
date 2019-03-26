@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Colours
+--------------------------------------------------------------*/
+$color__white: #fff;
+$color__white-off: #bfc9d3;
+$color__grey: #ccc;
+// $color__grey-light: #ddd;
+$color__black: #000;
+
+$color__primary-off: #91a05c;
+$color__primary: #b2c85f;
+$color__secondary: #2d4f6d;
+// $color__accent: lighten($color__primary-off, 25%);
+
+$color__background: #5b6d68;
+
+/*--------------------------------------------------------------
+# Typo
+--------------------------------------------------------------*/
+$font__main: 'Lato', sans-serif;
+$font__heading: 'Exo', sans-serif;;
+
+// $fw_normal: 400;
+// $fw_bold: 700;
+
+/*--------------------------------------------------------------
+# Layout
+--------------------------------------------------------------*/
+// $min-width: 320px;
+$max-width: 76rem;
+
+// currently same as default
+$breakpoints: (
+        //xs: 0,
+        //sm: 480px,
+        //md: 576px,
+        lg: 767px,
+        xl: 1199px,
+        //xxl: $max-width
+);

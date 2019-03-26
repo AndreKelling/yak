@@ -4,18 +4,17 @@
 }
 
 body {
-  background: #ffffff;
+  background: $color__white;
   margin: 0;
   height: 100%;
   color: #384452;
-  font-family: 'Lato', sans-serif;
+  font-family: $font__main;
   font-weight: 400;
 }
 
 p {
   padding: 0;
   margin-bottom: 12px;
-  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
@@ -43,8 +42,29 @@ blockquote p {
   margin-top: 0;
 }
 
+table {
+  border-top: 1px solid $color__grey;
+  margin-top: 50px;
+  width: 100%;
+}
+
+table tr { border-bottom: 1px solid $color__grey; }
+table th {
+  vertical-align: top;
+  min-width: 200px;
+  padding: 20px 0;
+  border-top: 1px solid $color__background;
+  border-bottom: 1px solid $color__background;
+  text-transform: uppercase;
+}
+
+table td {
+  vertical-align: top;
+  padding: 20px 0;
+}
+
 ::-moz-selection {
-  color: #fff;
+  color: $color__white;
   text-shadow: none;
   background: #2B2E31;
 }

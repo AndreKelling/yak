@@ -1,12 +1,11 @@
 @charset "utf-8";
 
-// @info: try to sort out the styles as i can :-/
+@import "variables";
 
 // Vendors
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
 @import url(https://fonts.googleapis.com/css?family=Exo:300,500,700);
 @import "vendor/bootstrap";
-@import "vendor/redaxo-demo";
 @import "vendor/prettyPhoto";
 @import "vendor/hoverex-all";
 @import "vendor/font-awesome.min";
@@ -18,12 +17,19 @@
 @import "elements/headings";
 @import "elements/links";
 
-// Copmonents
+// Components
 @import "components/navbar";
 @import "components/breadcrumbs";
 @import "components/menu";
+@import "components/sidebar";
+@import "components/footer";
+@import "components/slider";
 @import "components/forms";
 @import "components/portfolio";
+@import "components/fullpicture";
+
+// Demo Styles (unsorted)
+@import "redaxo-demo";
 
 // Tools
 @import "tools";

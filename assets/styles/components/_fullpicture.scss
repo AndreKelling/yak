@@ -1,0 +1,25 @@
+.fullpicture .container {
+  position: relative;
+  z-index: 3;
+}
+
+.fullpicture .centered {
+  position: relative;
+  z-index: 2;
+}
+
+.fullpicture i {
+  font-size: 50px;
+  color: $color__white;
+  margin-bottom: 25px;
+}
+
+.fullpicture p {
+  color: $color__white;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.fullpicture h4 {
+  color: $color__white-off;
+}

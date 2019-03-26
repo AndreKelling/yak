@@ -1,7 +1,8 @@
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Exo', sans-serif;
+  font-family: $font__heading;
   font-weight: 300;
 }
 
-h1, h2 { font-weight: 300; }
-h4 { margin-top: 30px; }
+h4 {
+  margin-top: 30px;
+}

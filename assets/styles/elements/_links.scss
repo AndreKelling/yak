@@ -1,5 +1,5 @@
 a {
-  color: #b2c85f;
+  color: $color__primary;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -12,5 +12,5 @@ a {
 
 a:hover, a:focus {
   text-decoration: none;
-  color: #5b6d68;
+  color: $color__background;
 }

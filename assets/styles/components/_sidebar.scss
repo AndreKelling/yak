@@ -1,0 +1,47 @@
+
+#sidenav_title {
+  margin-top: 0;
+}
+.sidebar li a.rex-current {
+  font-weight: bold;
+}
+
+#sidenav i { margin-right: 10px; }
+#sidenav {
+  padding-left: 0;
+  list-style-type: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#sidenav li {
+  padding: 2px 0;
+}
+#sidenav li a {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #384452;
+}
+
+#sidenav li a:hover,
+#sidenav li.active a { color: $color__primary; }
+#sidenav li.active li a { color: #384452; }
+#sidenav li li a:hover, #sidenav li li.active a { color: $color__white-off; }
+#sidenav ul {
+  margin-left: 15px;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+
+#sidenav ul li a {
+  text-transform: none;
+  font-weight: 300;
+  color: #384452;
+}
+
+@media all and (max-width: map-get($breakpoints, xl)) {
+  .sidebar {
+    clear: both;
+  }
+}

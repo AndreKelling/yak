@@ -40,7 +40,7 @@
 }
 
 .portfolio-item h3 {
-  color: #fff;
+  color: $color__white;
   margin: 0;
   padding: 40px 5px 0;
   font-size: 16px;
@@ -56,7 +56,7 @@
 .portfolio-item .bg {
   height: 100%;
   width: 100%;
-  background-color: #b2c85f;
+  background-color: $color__primary;
   background-color: rgba(56,68,82,0.9);
   text-align: center;
 }

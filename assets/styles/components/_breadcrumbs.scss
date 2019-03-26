@@ -20,7 +20,7 @@
 .rex-breadcrumb>li+li:before,
 .breadcrumb-wrapper .home_link:after {
   padding: 0 5px;
-  color: #ccc;
+  color: $color__grey;
   content: "/\00a0";
 }
 .breadcrumb-wrapper .home_link:after {

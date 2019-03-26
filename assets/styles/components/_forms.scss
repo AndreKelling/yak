@@ -99,8 +99,8 @@ input[type="radio"], input[type="checkbox"] {
 }
 .xform .btn,
 .xform input[type=submit] {
-	background: #b2c85f;
-	border-color: #b2c85f;
+	background: $color__primary;
+	border-color: $color__primary;
 }
 .xform input[type=submit] {
 	display: inline-block;
@@ -129,7 +129,7 @@ input[type="radio"], input[type="checkbox"] {
 
 
 .xform input[type=submit], .btn-theme {
-	color: #fff;
+	color: $color__white;
 	background-color: #384452;
 	border-color: #384452;
 	margin: 4px;
@@ -144,22 +144,22 @@ input[type="radio"], input[type="checkbox"] {
 .btn-theme:active,
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
-	color: #fff;
-	background-color: #b2c85f;
-	border-color: #b2c85f;
+	color: $color__white;
+	background-color: $color__primary;
+	border-color: $color__primary;
 }
 
 .dmbutton:hover,
 .dmbutton:active, .dmbutton:focus {
-	color: #ffffff;
-	background-color: #b2c85f;
-	border-color: #ffffff;
+	color: $color__white;
+	background-color: $color__primary;
+	border-color: $color__white;
 }
 
 .dmbutton {
 	background: rgba(0,0,0,0);
-	border: 1px solid #ffffff;
-	color: #ffffff;
+	border: 1px solid $color__white;
+	color: $color__white;
 	-webkit-border-radius: 2px;
 	border-radius: 2px;
 	padding-top: 1.025rem;

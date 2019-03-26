@@ -1,0 +1,199 @@
+.slider { position: relative; }
+.slider .slides li { position: relative; }
+.slider.small-controls .flex-direction-nav a { margin-top: -20px; }
+.slider.small-controls .flex-control-nav { display: none; }
+.hero-slider {
+  padding: 0px;
+  position: relative;
+}
+
+.hero-slider .slides { overflow: hidden; }
+.hero-slider .slides li {
+  height: 650px;
+  position: relative;
+  background-size: cover !important;
+}
+
+.hero-slider .slides li .row {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-slider .slides li h3 { font-size: 30px; }
+.hero-slider .slides li h2 {
+  line-height: 1;
+  margin-bottom: 33px;
+  padding-bottom: 7px;
+}
+
+.hero-slider .slides li h1 {
+  line-height: 1;
+  font-size: 60px;
+  margin-bottom: 33px;
+}
+
+.work-slider { margin-top: 28px; }
+.work-slider .slides li { height: 400px; }
+.slides li .fadeUp { opacity: 0; }
+.slides li {
+  position: relative;
+  color: #fff;
+}
+
+.slides li p, .slides li a { color: #fff; }
+.slides li .slide-content {
+  position: relative;
+  z-index: 3;
+}
+
+.slides li h1, .slides li p {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.slides li .overlay {
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.slides li .btn-theme {
+  border: none;
+  background-color: $color__primary;
+  color: #384452;
+}
+
+.slides li .btn-theme:hover, .slides li .btn-theme:focus, .slides li .btn-theme:active, .slides li .btn-theme.active {
+  background-color: #384452;
+  color: #fff;
+}
+
+.hero-slider .slides li .slide-content img { max-height: 500px; }
+.hero-slider .flex-direction-nav a {
+  height: 60px;
+  width: 60px;
+  font-size: 0;
+}
+
+.hero-slider .flex-direction-nav a:before {
+  position: absolute;
+  font-size: 40px;
+  display: block;
+  top: 15px;
+  left: 23px !important;
+  right: auto !important;
+}
+
+.hero-slider .flex-direction-nav a.flex-prev:before { left: 20px !important; }
+@media all and (max-width: map-get($breakpoints, xl)) {
+  .hero-slider .slides li .slide-content img { max-height: 300px; }
+}
+
+.background-breathe {
+  -webkit-animation: burnsIn 16s ease infinite alternate;
+  -moz-animation: burnsIn 16s ease infinite alternate;
+  animation: burnsIn 16s ease infinite alternate;
+}
+
+.background-breathe .slide-content {
+  -webkit-animation: burnsOut 16s ease infinite alternate;
+  animation: burnsOut 16s ease infinite alternate;
+  -moz-animation: burnsOut 16s ease infinite alternate;
+  position: relative;
+  top: 30px;
+}
+
+@-webkit-keyframes burnsIn {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+  }
+
+}
+
+@-webkit-keyframes burnsOut {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(0.8,0.8);
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);
+  }
+
+}
+
+@-moz-keyframes burnsIn {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+  }
+
+}
+
+@-moz-keyframes burnsOut {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(0.8,0.8);
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);
+  }
+
+}
+
+@keyframes burnsIn {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+  }
+
+}
+
+@keyframes burnsOut {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+    -ms-transform: scale(1,1);
+  }
+
+  to {
+    -webkit-transform: scale(0.8,0.8);
+    transform: scale(0.8,0.8);
+    -ms-transform: scale(0.8,0.8);
+  }
+
+}

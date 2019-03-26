@@ -21,7 +21,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
 
 
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: $color__white;
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -29,9 +29,9 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
   padding-right: 10px;
 }
 
-.navbar-default .navbar-nav > li > a:hover { color: #b2c85f; }
+.navbar-default .navbar-nav > li > a:hover { color: $color__primary; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-  color: #b2c85f;
+  color: $color__primary;
   background-color: transparent;
 }
 
@@ -70,7 +70,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
   text-transform: uppercase;
 }
 
-@media (max-width: 767px){
+@media (max-width:  map-get($breakpoints, lg)){
   .lang-title {
     color: #fff;
     margin-top: 30px;
@@ -91,7 +91,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
 
 .navbar-right .dropdown-menu { left: 0; }
 .dropdown-menu > li > a {
-  color: white;
+  color: $color__white;
   font-weight: 700;
   font-size: 12px;
   padding: 6px 20px;
@@ -104,6 +104,61 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a.active,
 .dropdown-menu > .active > a {
-  color: #b2c85f;
+  color: $color__primary;
   background: #4d5d70 !important;
+}
+
+@media all and (max-width:  map-get($breakpoints, lg)) {
+  .container > .navbar-header {
+    margin-bottom: 10px;
+  }
+  .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;;
+  }
+  .navbar-default .navbar-collapse {
+    border: none;
+  }
+  .navbar-collapse {
+    max-height: none;
+  }
+  .navbar-fixed-top {
+    position: static;
+  }
+  .dropdown-menu {
+    box-shadow: none;
+    position: relative;
+    display: block;
+    float: none;
+    padding-top: 0;
+    padding-bottom: 20px;
+    list-style-type: disc;
+  }
+  .navbar-default .dropdown-toggle a {
+    border-bottom: 1px solid #5e6772;
+  }
+  .navbar-default .dropdown-menu li a,
+  .navbar-default .dropdown-toggle:last-child a {
+    border-bottom: none;
+  }
+  .dropdown-menu {
+    margin-left: 0;
+    padding-left: 30px;
+  }
+  .dropdown-menu > li {
+    color: #fff;
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+  .dropdown-menu > li > a {
+    border: none;
+    padding: 6px 0;
+  }
+  .dropdown-menu > li > a:hover {
+    background: none;
+  }
 }
