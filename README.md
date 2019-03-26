@@ -1,7 +1,7 @@
 # Yak with Demo Base
 
-Forked the yak redaxo setup for a SCSS workflow based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn.
-Find in depth setup and deploy information on [yak base repo](https://github.com/yakamara/yak) readme.
+Forked the yak redaxo setup for a SCSS workflow. Based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn.
+Find in depth setup and deploy tool information on [yak base repo](https://github.com/yakamara/yak) readme.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ Find in depth setup and deploy information on [yak base repo](https://github.com
 
 ## Install
 
-1. put your URL into `/.env` file
+1. put your URL into `./.env.dist` file
    
    ```APP_HOST=project.localhost```
    
@@ -25,7 +25,6 @@ Find in depth setup and deploy information on [yak base repo](https://github.com
 ### Further requirements
 
 * developer AddOn installed (should already in with setup)
-* ydeploy AddOn installed (should already in with setup)
 
 ## Development
 
