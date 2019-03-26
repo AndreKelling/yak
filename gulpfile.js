@@ -12,6 +12,7 @@ const config = {
 const paths = {
     styles: {
         src: 'assets/styles/*.scss',
+        watchSrc: 'assets/styles/**/*.scss',
         dest: 'public/resources/css/'
     },
     scripts: {
@@ -44,7 +45,7 @@ function scripts() {
 function watch() {
     gulp.watch(paths.scripts.src, scripts);
 
-    gulp.watch(paths.styles.src, styles);
+    gulp.watch(paths.styles.watchSrc, styles);
 }
 
 const build = gulp.parallel(styles, scripts);
