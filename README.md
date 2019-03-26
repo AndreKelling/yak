@@ -1,6 +1,6 @@
 # Yak with Demo Base
 
-Forked the yak redaxo setup for a SCSS workflow. Based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn.
+Forked the yak redaxo setup for a SCSS workflow. Based on the [demo_base](https://github.com/FriendsOfREDAXO/demo_base) AddOn (Version 2.6.5).
 Find in depth setup and deploy tool information on [yak base repo](https://github.com/yakamara/yak) readme.
 
 ## Motivation
