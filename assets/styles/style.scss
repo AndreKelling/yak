@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+// @info: try to sort out the styles as i can :-/
+
 // Vendors
 @import url(https://fonts.googleapis.com/css?family=Lato:400,900);
 @import url(https://fonts.googleapis.com/css?family=Exo:300,500,700);
@@ -9,6 +11,19 @@
 @import "vendor/hoverex-all";
 @import "vendor/font-awesome.min";
 @import "vendor/flexslider";
-@import "vendor/menu";
-@import "vendor/forms";
 @import "vendor/prettify";
+
+// Basics
+@import "elements/basic";
+@import "elements/headings";
+@import "elements/links";
+
+// Copmonents
+@import "components/navbar";
+@import "components/breadcrumbs";
+@import "components/menu";
+@import "components/forms";
+@import "components/portfolio";
+
+// Tools
+@import "tools";

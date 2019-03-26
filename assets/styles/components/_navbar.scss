@@ -1,0 +1,109 @@
+.navbar {
+  min-height: 70px;
+  padding-top: 10px;
+  margin-bottom: 0px;
+}
+
+ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
+  display: block;
+}
+.navbar-brand {
+  height: auto;
+  padding: 0;
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: auto;
+}
+.navbar-brand img {
+  height: 26px;
+  width: auto;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-default .navbar-nav > li > a:hover { color: #b2c85f; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #b2c85f;
+  background-color: transparent;
+}
+
+.navbar-default {
+  background-color: #384452;
+  border-color: transparent;
+}
+
+.dropdown-menu {
+  background: #384452;
+  border: none !important;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.navbar-default .lang {
+  margin-left: 5px;
+}
+.navbar-default .lang a {
+  margin-left: 5px;
+  padding-left: 10px;
+}
+.navbar-default .lang ul a {
+  margin-left: 0;
+}
+.navbar-default .lang:before {
+  content: '';
+  height: 14px;
+  width: 1px;
+  float: left;
+  position: relative;
+  top: 18px;
+  border-left: 1px solid #fff;
+}
+.navbar-default .lang .dropdown-menu {
+  min-width: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px){
+  .lang-title {
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+    background: #5e6772;
+  }
+  .navbar-default .lang {
+    margin-bottom: 20px;
+  }
+  .navbar-default .lang:before {
+    content: none;
+  }
+  .navbar-default .lang,
+  .navbar-default .lang a {
+    margin-left: 0;
+  }
+}
+
+.navbar-right .dropdown-menu { left: 0; }
+.dropdown-menu > li > a {
+  color: white;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 6px 20px;
+  border-top: 1px solid #4d5d70;
+}
+
+.dropdown-menu > li:first-child > a {
+  border-top: none;
+}
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a.active,
+.dropdown-menu > .active > a {
+  color: #b2c85f;
+  background: #4d5d70 !important;
+}

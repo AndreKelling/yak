@@ -9,7 +9,6 @@ const config = {
     production: !!util.env.production
 };
 
-
 const paths = {
     styles: {
         src: 'assets/styles/*.scss',

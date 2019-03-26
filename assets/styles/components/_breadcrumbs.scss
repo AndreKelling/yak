@@ -1,0 +1,28 @@
+.breadcrumb-wrapper {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.breadcrumb-wrapper .home_link {
+  padding-left: 10px;
+}
+.rex-breadcrumb {
+  display: inline-block;
+  padding-left: 0px;
+  margin-bottom: 0;
+}
+.rex-breadcrumb>li,
+.breadcrumb-wrapper .home_link{
+  display: inline-block;
+}
+.rex-breadcrumb>li+li:before,
+.breadcrumb-wrapper .home_link:after {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+.breadcrumb-wrapper .home_link:after {
+  padding-left: 10px;
+}
