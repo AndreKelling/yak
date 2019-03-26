@@ -37,7 +37,7 @@ function scripts() {
         })
         .pipe(config.production ? uglify() : util.noop())
         .pipe(!config.production ? sourcemaps.init({loadMaps: true}) : util.noop())
-        .pipe(concat('main.min.js'))
+        .pipe(concat('main.js'))
         .pipe(!config.production ? sourcemaps.write('.') : util.noop())
         .pipe(gulp.dest(paths.scripts.dest));
 }

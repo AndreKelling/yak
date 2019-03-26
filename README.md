@@ -32,7 +32,7 @@ Now to really use your SCSS and JS gulp workflow. You need to change the binded 
 
 1. in `src/templates/00 . Header [4]/template.php` replace all CSS integrations and set the created `resources/css/style.css` as single CSS resource. You can remove all other CSS files here.
 
-1.  in `src/templates/03 . TEMPLATE [3]/template.php` replace all JS integrations and set the created `resources/js/main.min.js` as single JS resource. You can remove all other JS files here.
+1.  in `src/templates/03 . TEMPLATE [3]/template.php` replace all JS integrations and set the created `resources/js/main.js` as single JS resource. You can remove all other JS files here.
  
 1. `npm run dev`
 
