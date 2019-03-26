@@ -53,9 +53,9 @@ Redaxo ${REDAXO_VERSION}${CNO} was sussessful loaded and unzipped into the publi
 echo -e "${CRED}
 Create Yakamara file structure
 - - - - - - - - - - - -${CNO}"
-rm -r bin; mkdir bin
-rm -r src; mkdir src
-rm -r var; mkdir var
+mkdir bin
+mkdir src
+mkdir var
 
 mv public/redaxo/bin/* bin
 mv public/redaxo/cache var
