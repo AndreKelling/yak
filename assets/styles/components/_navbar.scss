@@ -36,12 +36,12 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
 }
 
 .navbar-default {
-  background-color: #384452;
+  background-color: $color__background;
   border-color: transparent;
 }
 
 .dropdown-menu {
-  background: #384452;
+  background: $color__background;
   border: none !important;
   padding-top: 10px;
   padding-bottom: 0;
@@ -63,7 +63,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
   float: left;
   position: relative;
   top: 18px;
-  border-left: 1px solid #fff;
+  border-left: 1px solid $color__white;
 }
 .navbar-default .lang .dropdown-menu {
   min-width: 40px;
@@ -72,7 +72,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
 
 @media (max-width:  map-get($breakpoints, lg)){
   .lang-title {
-    color: #fff;
+    color: $color__white;
     margin-top: 30px;
     padding: 10px;
     background: #5e6772;
@@ -150,7 +150,7 @@ ul.nav li.dropdown-toggle:hover > ul.dropdown-menu {
     padding-left: 30px;
   }
   .dropdown-menu > li {
-    color: #fff;
+    color: $color__white;
     list-style-type: disc;
     list-style-position: outside;
   }

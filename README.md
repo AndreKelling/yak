@@ -51,4 +51,4 @@ For production settings, without sourcemaps, you will need to build CSS and JS o
 ## Issues
 
 * SCSS and JS are still unclean written
-* I did not keep attention on the deployemnt tool of the original yak
+* I did not keep attention on the deployment tool of the original yak
