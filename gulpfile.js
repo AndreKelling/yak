@@ -16,7 +16,7 @@ const paths = {
         dest: 'public/resources/css/'
     },
     scripts: {
-        src: ['assets/scripts/jquery/jquery-3.3.1.js', 'assets/scripts/*.js'], // the order that redaxo-demo is loaded as last is currently right, but not bulletproof
+        src: ['assets/scripts/jquery/jquery-3.3.1.js', 'assets/scripts/vendor/*.js', 'assets/scripts/*.js'],
         dest: 'public/resources/js/'
     }
 };
