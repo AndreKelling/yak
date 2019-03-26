@@ -81,9 +81,9 @@ Load REDAXO AddOns
 ${CNO}"
 
 # structure_tweaks
-echo "Load FriendsOfREDAXO addons [adminer bloecks demo_base developer focuspoint markitup mblock multiupload quick_navigation redactor2]:"
+echo "Load FriendsOfREDAXO addons [adminer bloecks demo_base developer focuspoint mblock multiupload quick_navigation redactor2]:"
 
-repos=("adminer" "bloecks" "demo_base" "developer" "focuspoint" "markitup" "mblock" "multiupload" "quick_navigation" "redactor2")
+repos=("adminer" "bloecks" "demo_base" "developer" "focuspoint" "mblock" "multiupload" "quick_navigation" "redactor2")
 
 for repo in ${repos[@]}
 do
@@ -153,3 +153,5 @@ rm -rf tmp
 
 # execute npm install
 npm i
+
+echo "You can remove the setup directory now."
